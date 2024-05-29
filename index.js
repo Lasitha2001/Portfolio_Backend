@@ -2,6 +2,9 @@
 const express = require('express');
 const app = express();
 const port = 5000;
+//Create entry point for the application
+const cors = require('cors');
+app.use(cors());
 
 //Parse body To use req.body
 app.use(express.json());
